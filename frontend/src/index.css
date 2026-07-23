@@ -1,0 +1,65 @@
+:root {
+  --ink: #1b2430;
+  --ink-deep: #121821;
+  --ink-panel: #212c3b;
+  --parchment: #efe7d6;
+  --parchment-shadow: #d9cead;
+  --rule: #c9bd9c;
+  --gold: #c9a227;
+  --gold-deep: #9c7d1a;
+  --rust: #b8583a;
+  --slate: #8f98a8;
+  --cream: #f5f1e8;
+  --ink-text: #2b2318;
+  --ink-text-soft: #5a4f3d;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+
+  --radius-card: 6px;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at top, #232f40 0%, var(--ink) 45%, var(--ink-deep) 100%);
+  background-attachment: fixed;
+  color: var(--cream);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

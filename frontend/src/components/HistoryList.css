@@ -1,0 +1,130 @@
+.drawer {
+  background: var(--ink-panel);
+  border: 1px solid rgba(245, 241, 232, 0.06);
+  border-radius: 10px;
+  padding: 22px 20px 14px;
+  max-height: 620px;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed rgba(245, 241, 232, 0.15);
+}
+
+.drawer-header h2 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.clear-button {
+  background: none;
+  border: none;
+  color: var(--slate);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.clear-button:hover {
+  color: var(--rust);
+}
+
+.drawer-empty {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--slate);
+  padding: 20px 4px;
+}
+
+.ticket-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ticket-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ticket-list::-webkit-scrollbar-thumb {
+  background: rgba(245, 241, 232, 0.15);
+  border-radius: 4px;
+}
+
+.ticket {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(245, 241, 232, 0.03);
+  border: 1px solid rgba(245, 241, 232, 0.08);
+  border-radius: 6px;
+  padding: 12px 14px;
+}
+
+.ticket-index {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--gold);
+  padding-top: 2px;
+  flex-shrink: 0;
+}
+
+.ticket-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.ticket-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  margin: 0 0 6px;
+  color: var(--cream);
+  overflow-wrap: break-word;
+}
+
+.ticket-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--slate);
+  letter-spacing: 0.03em;
+}
+
+.ticket-author {
+  text-transform: uppercase;
+}
+
+.ticket-delete {
+  background: none;
+  border: none;
+  color: var(--slate);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 4px;
+  flex-shrink: 0;
+}
+
+.ticket-delete:hover {
+  color: var(--rust);
+}
